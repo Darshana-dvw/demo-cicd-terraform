@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12  # Specify the Python version (e.g., 3.8)
+    commands:
+      - echo Installing Flask...
+      - pip install Flask==2.1.1  # Directly install dependencies here
+  
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Running application tests...
+      - python -m unittest discover  # Adjust if you have tests
