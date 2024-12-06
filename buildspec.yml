@@ -11,5 +11,4 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Running application tests...
-      - python -m unittest discover  # Adjust if you have tests
+      - echo Skipping tests, no tests available.  # No tests to run
